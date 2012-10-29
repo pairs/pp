@@ -93,7 +93,6 @@ public class ProjectServiceImpl implements ProjectService {
 	 * Dev Sr – 30% Mid – 10% Jr – 60% QA Sr – 10% Mid – 80% Jr – 10%
 	 * 
 	 * @return a project detailed distribution for all existing projects
-	 * @throws RepositoryException
 	 */
 
 	public ProjectDetailedDistributionDTO getStructureDistribution() {
@@ -162,7 +161,6 @@ public class ProjectServiceImpl implements ProjectService {
 	 * @param value
 	 *            a constant value for which the ratio DEV/QA will be computed
 	 * @return the list of projects for which dev / qa ratio is greater than value
-	 * @throws RepositoryException
 	 */
 	public List<Project> listProjectWithRole(int value) {
 		ProjectDistributionDTO projectDistributionDTO = new ProjectDistributionDTO();
